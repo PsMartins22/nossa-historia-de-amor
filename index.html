@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossa História de Amor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chosen Palette: Warm Embrace (Beige/Stone background, Dark Gray text, Muted Rose accent) -->
+    <!-- Application Structure Plan: A single-page, vertical scrolling application emulating a photo book. A sticky top navigation allows smooth scrolling to each 'chapter' (section). This structure provides a linear storytelling experience similar to a book but enhanced with web interactivity. The layout alternates between image-left and image-right to maintain visual interest. This is more engaging than a static PDF and directly represents the user's template concept in a web format. The application is fully responsive, adapting seamlessly to mobile, tablet, and desktop screens for optimal viewing on any device. -->
+    <!-- Visualization & Content Choices: The core content is photos and text. Photos are represented by placeholders (via placehold.co). Text is taken directly from the user's template. The goal is to 'Inform' and 'Organize' the user's love story. The primary presentation method is alternating image-and-text blocks within distinct sections. The interaction is smooth-scroll navigation. This choice directly translates the linear 'book' concept into a user-friendly, single-page web experience. NO SVG/Mermaid used. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #F5F5F4; /* stone-100 */
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        .nav-link.active {
+            color: #F43F5E; /* rose-500 */
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="text-stone-800">
+
+    <main>
+        <!-- Capa -->
+        <section id="capa" class="relative h-screen flex items-center justify-center text-white text-center bg-stone-500">
+             <div class="absolute inset-0 bg-black opacity-40"></div>
+             <img src="assets/IMG-20250610-WA0007.jpg" 
+                  onerror="this.onerror=null;this.src='https://placehold.co/1200x800/cccccc/ffffff?text=Imagem+Indispon%C3%ADvel';"
+                  alt="Foto do casal na capa do livro de amor" class="absolute inset-0 w-full h-full object-cover">
+            <div class="relative z-10 p-4">
+                <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold mb-4 tracking-wider">Nossa História de Amor</h1>
+                <p class="text-xl md:text-2xl font-light">Patrick & Gabrieli</p>
+            </div>
+        </section>
+        
+        <!-- Introdução / Dedicatória -->
+        <section id="introducao" class="py-20 md:py-32 bg-stone-100">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl text-center">
+                 <img src="assets/IMG-20250610-WA0008.jpg" 
+                      onerror="this.onerror=null;this.src='https://placehold.co/300x400/cccccc/ffffff?text=Imagem+Indispon%C3%ADvel';"
+                      alt="Foto do casal para a dedicatória" class="w-48 h-64 mx-auto rounded-lg shadow-xl mb-8 object-cover transform hover:scale-105 transition-transform duration-300">
+                <p class="text-lg md:text-xl italic text-stone-600 leading-relaxed">
+                    "Para o meu amor, Gabrieli. Cada risada, cada abraço, cada passo. Esta é a nossa história, a mais linda que já vivi. Um presente do meu coração, com a certeza de que os próximos capítulos serão ainda mais incríveis."
+                </p>
+            </div>
+        </section>
+
+        <!-- Capítulos -->
+        <div class="space-y-16 md:space-y-24 py-16 md:py-24 overflow-hidden">
+            <!-- Capítulo 1 -->
+            <section id="capitulo1" class="chapter-section container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+                    <div class="text-content">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4">Capítulo 1: Onde Tudo Começou</h2>
+                        <p class="text-stone-600 leading-relaxed">
+                           Lembra desse dia Meu coração já sabia. Nossos olhares se cruzaram, e o que parecia um simples encontro se transformou no começo da aventura mais linda da minha vida. Você chegou e virou meu mundo do avesso, do jeito mais perfeito.
+                        </p>
+                    </div>
+                    <div class="image-content flex justify-center">
+                         <img src="assets/Imagem do WhatsApp de 2025-06-10 à(s) 18.31.51_340478e4.jpg" 
+                              onerror="this.onerror=null;this.src='https://placehold.co/600x750/cccccc/ffffff?text=Imagem+Indispon%C3%ADvel';"
+                              alt="Foto representando o início do relacionamento" class="rounded-lg shadow-2xl w-full max-w-sm h-auto object-cover transform transition-transform duration-500 hover:rotate-1">
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Capítulo 2 -->
+            <section id="capitulo2" class="chapter-section container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+                     <div class="image-content flex justify-center md:order-last">
+                         <img src="assets/IMG-20250610-WA0009.jpg" 
+                              onerror="this.onerror=null;this.src='https://placehold.co/600x750/cccccc/ffffff?text=Imagem+Indispon%C3%ADvel';"
+                              alt="Foto representando as primeiras descobertas do casal" class="rounded-lg shadow-2xl w-full max-w-sm h-auto object-cover transform transition-transform duration-500 hover:-rotate-1">
+                    </div>
+                    <div class="text-content md:order-first">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4">Capítulo 2: As Descobertas e Encantos</h2>
+                        <p class="text-stone-600 leading-relaxed">
+                           Cada dia ao seu lado era uma nova descoberta. Seu sorriso, seu jeito, cada detalhe que me fazia querer estar ainda mais perto. Foram meses de aprendizado, de risadas fáceis e da certeza de que eu havia encontrado a pessoa certa. Aquela fase mágica de só querer ficar junto e não se cansar nunca.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Capítulo 3 -->
+            <section id="capitulo3" class="chapter-section container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+                    <div class="text-content">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4">Capítulo 3: Aventuras e Conquistas</h2>
+                        <p class="text-stone-600 leading-relaxed">
+                           Nossa história é recheada de momentos que vão muito além do cotidiano. As viagens, os desafios que superamos juntos, as comemorações que marcaram época. Cada aventura ao seu lado me mostrou a força do nosso amor e a leveza de ser feliz com você. Sou grato por cada uma dessas lembranças.
+                        </p>
+                    </div>
+                    <div class="image-content flex justify-center">
+                         <img src="assets/IMG-20250610-WA0010.jpg" 
+                              onerror="this.onerror=null;this.src='https://placehold.co/600x750/cccccc/ffffff?text=Imagem+Indispon%C3%ADvel';"
+                              alt="Foto de viagens ou conquistas do casal" class="rounded-lg shadow-2xl w-full max-w-sm h-auto object-cover transform transition-transform duration-500 hover:rotate-1">
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Capítulo 4 -->
+            <section id="capitulo4" class="chapter-section container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+                     <div class="image-content flex justify-center md:order-last">
+                         <img src="assets/IMG-20250610-WA0012.jpg" 
+                              onerror="this.onerror=null;this.src='https://placehold.co/600x750/cccccc/ffffff?text=Imagem+Indispon%C3%ADvel';"
+                              alt="Foto representando o cotidiano do casal" class="rounded-lg shadow-2xl w-full max-w-sm h-auto object-cover transform transition-transform duration-500 hover:-rotate-1">
+                    </div>
+                    <div class="text-content md:order-first">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4">Capítulo 4: A Delícia do Dia a Dia</h2>
+                        <p class="text-stone-600 leading-relaxed">
+                           Mas a verdade é que o meu lugar preferido é no seu abraço, nos detalhes mais simples do nosso dia a dia. Seu cheiro ao acordar, o café da manhã juntos, as conversas bobas, o silêncio confortável. É nesses pequenos momentos que eu vejo a beleza do nosso amor, e é onde quero estar para sempre.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Capítulo 5 -->
+            <section id="capitulo5" class="chapter-section container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+                    <div class="text-content">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4">Capítulo 5: Presente e Futuro Juntos</h2>
+                        <p class="text-stone-600 leading-relaxed">
+                           Hoje, olhando para cada foto, cada memória, meu coração transborda. Você é a minha paz, minha inspiração e a pessoa com quem eu quero construir cada segundo do meu futuro. Minha certeza de que nosso amor é para sempre só cresce. Mal posso esperar pelos próximos capítulos, que serão os mais lindos de todos, ao seu lado.
+                        </p>
+                    </div>
+                    <div class="image-content flex justify-center">
+                         <img src="assets/IMG-20250610-WA0011.jpg" 
+                              onerror="this.onerror=null;this.src='https://placehold.co/600x750/cccccc/ffffff?text=Imagem+Indispon%C3%ADvel';"
+                              alt="Foto recente do casal pensando no futuro" class="rounded-lg shadow-2xl w-full max-w-sm h-auto object-cover transform transition-transform duration-500 hover:rotate-1">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-stone-200 py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center text-stone-600">
+            <p class="text-lg mb-2">Eu te amo, Gabrieli.</p>
+            <p class="text-sm">Com todo o meu coração. &hearts;</p>
+            <p class="text-xs mt-4">Dia dos Namorados, 2025</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('.chapter-section, #capa, #introducao');
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.4
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const link = document.querySelector(`a[href="#${entry.target.id}"]`);
+                        
+                        // Handle sections without direct nav links like introducao
+                        let targetId = entry.target.id;
+                        if(targetId === 'introducao') {
+                            targetId = 'capa'; // Highlight 'Início' for introduction as well
+                        }
+                        
+                        navLinks.forEach(navLink => {
+                            navLink.classList.remove('active');
+                            if (navLink.getAttribute('href') === `#${targetId}`) {
+                                navLink.classList.add('active');
+                            }
+                        });
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
